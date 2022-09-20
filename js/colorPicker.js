@@ -37,7 +37,7 @@ function convertColor() {
   var rgbGreen = green * 255;
   var rgbBlue = blue * 255;
 
-
+  //make sure variables are fixed
   pho = red / total;
   pho = red.toFixed(2);
 
@@ -47,7 +47,7 @@ function convertColor() {
   beta = blue / total;
   beta = blue.toFixed(2);
 
-
+//Set sqaure boxes color and output the ρɣβL message
   document.getElementById("output").innerHTML = "Barycentric Maxwell in order of ρ,ɣ,β,L:<br>(" + pho + ", " + gamma + ", " + beta + ", " + luminance + ")";
 
   var outputColor = "rgb(" + rgbRed + "," + rgbGreen + "," + rgbBlue + ")";
