@@ -1,5 +1,4 @@
 function convertColor() {
-  console.log("Button Press")
   //Create variables from the input tags
   let red = parseFloat(document.getElementById("red").value);
   let green = parseFloat(document.getElementById("green").value);
@@ -33,7 +32,7 @@ function convertColor() {
 
   var luminance = Math.max(red, green, blue);
 
-//Multiply by 255
+  //Multiply by 255
   var rgbRed = red * 255;
   var rgbGreen = green * 255;
   var rgbBlue = blue * 255;
@@ -54,6 +53,4 @@ function convertColor() {
   var outputColor = "rgb(" + rgbRed + "," + rgbGreen + "," + rgbBlue + ")";
 
   document.getElementById("colorSquare").style.background = outputColor
-  }
-
-
+}
