@@ -6,18 +6,18 @@ function convertColor() {
 
   //Make sure the number fits the criteria
   if (red > 1 | red < 0 | isNaN(red)) {
-    alert("Make sure your number is between 0.0 and 1.0. No box may be left empty.")
-    console.log("Invalid number")
+    alert("Make sure your number is between 0.0 and 1.0. No box may be left empty.");
+    console.log("Invalid number");
     return;
 
   } else if (green > 1 | green < 0 | isNaN(green)) {
-    alert("Make sure your number is between 0.0 and 1.0. No box may be left empty.")
-    console.log("Invalid number")
+    alert("Make sure your number is between 0.0 and 1.0. No box may be left empty.");
+    console.log("Invalid number");
     return;
 
   } else if (blue > 1 | blue < 0 | isNaN(blue)) {
-    alert("Make sure your number is between 0.0 and 1.0. No box may be left empty.")
-    console.log("Invalid number")
+    alert("Make sure your number is between 0.0 and 1.0. No box may be left empty.");
+    console.log("Invalid number");
     return;
 
   } else {
@@ -25,9 +25,9 @@ function convertColor() {
   }
   //Create Pho, Gamma, Beta, and luminance variables
 
-  var pho
-  var gamma
-  var beta
+  var pho;
+  var gamma;
+  var beta;
   var total = green + red + blue;
 
   var luminance = Math.max(red, green, blue);
@@ -47,10 +47,10 @@ function convertColor() {
   beta = blue / total;
   beta = blue.toFixed(2);
 
-//Set sqaure boxes color and output the ρɣβL message
+  //Set sqaure boxes color and output the ρɣβL message
   document.getElementById("output").innerHTML = "Barycentric Maxwell in order of ρ,ɣ,β,L:<br>(" + pho + ", " + gamma + ", " + beta + ", " + luminance + ")";
 
   var outputColor = "rgb(" + rgbRed + "," + rgbGreen + "," + rgbBlue + ")";
 
-  document.getElementById("colorSquare").style.background = outputColor
+  document.getElementById("colorSquare").style.background = outputColor;
 }
