@@ -1,34 +1,27 @@
 function convertColor() {
-    var red = parseFloat(document.getElementById("red").value);
-    var green = parseFloat(document.getElementById("green").value);
-    var blue = parseFloat(document.getElementById("blue").value);
+  console.log("Button Press")
+  //Create variables from the input tags
+  let red = parseFloat(document.getElementById("red").value);
+  let green = parseFloat(document.getElementById("green").value);
+  let blue = parseFloat(document.getElementById("blue").value);
 
-
-    if (0 > Math.min(colorRed)) {
-        document.write("Enter a value between 0.0 and 1.0");
-    }
-
-
-
-}
-
-function myFunction() {
-    document.getElementById("output").innerHTML = "Red = " + parseFloat(document.getElementById("red").value) ;
+  //Make sure the number fits the criteria
+  if (red > 1 | red < 0) {
+    alert("Make sure your number is between 0.0 and 1.0")
+    console.log("Invalid number")
+  } else if (green > 1 | green < 0) {
+    alert("Make sure your number is between 0.0 and 1.0")
+    console.log("Invalid number")
+  } else if (blue > 1 | blue < 0) {
+    alert("Make sure your number is between 0.0 and 1.0")
+    console.log("Invalid number")
+  } else {
+    //If the number is between 0.0 and 1.0 than continue
+    alert("Nice job!")
   }
-
-
-  function lab10firstLoopStopIf() {
-    var i = 1;
-    var total = 0;
-    if (i > 0) {
-      for (i = 1; i > 0;) {
-        i = Number(prompt("Please enter a number greater than zero to add, otherwise enter zero to quit: "))
-        document.write("You entered: " + i + "<br>")
-        total = (total + i)
-      }
-    }
-    document.write("Total of all numbers entered:  " + total);
+    
+  console.log("Colors are " + red +"" + green +"" + blue)
+  document.getElementById("output").style.background = string;
   }
-  convertColor();
 
 
