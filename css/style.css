@@ -21,6 +21,12 @@ main {
 
 }
 
+#colorSquare {
+    min-width: 100px;
+    min-height: 100px;
+
+}
+
 h1 {
     color: white;
     height: 100px;
@@ -55,7 +61,7 @@ a {
 }
 
 a:hover {
-    color: #ed1e24;
+    color: white;
 }
 
 
